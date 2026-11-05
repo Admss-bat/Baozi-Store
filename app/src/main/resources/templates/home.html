@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baozi Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <p>Uai mano</p>
+
+    <header class="cabecalho">
+        <h1 class="logo">Baozi <span class="destaque">Store</span></h1>
+    </header>
+
+    <main class="container">
+        <!-- Balão 1: Clientes -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Clientes</h2>
+                <p>Gerencie o cadastro dos consumidores.</p>
+            </div>
+            <div class="acoes">
+                <button class="btn btn-primario">Cadastrar</button>
+                <button class="btn btn-secundario">Consultar</button>
+            </div>
+        </section>
+
+        <!-- Balão 2: Produtos -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Produtos</h2>
+                <p>Gerencie o cardápio e os itens da loja.</p>
+            </div>
+            <div class="acoes">
+                <button class="btn btn-primario">Cadastrar</button>
+                <button class="btn btn-secundario">Consultar</button>
+            </div>
+        </section>
+
+        <!-- Balão 3: Pedidos -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Pedidos</h2>
+                <p>Registre e gerencie as vendas.</p>
+            </div>
+            <div class="acoes">
+                <button class="btn btn-primario">Cadastrar</button>
+                <button class="btn btn-secundario">Consultar</button>
+            </div>
+        </section>
+
+        <!-- Balão 4: Visualizar tudo -->
+        <section class="card destaque-card">
+            <div class="card-header">
+                <h2>Visualizar tudo</h2>
+                <p>Visualize todos os clientes, produtos e pedidos.</p>
+            </div>
+            <div class="acoes">
+                <button class="btn btn-primario btn-largo">Listar</button>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
