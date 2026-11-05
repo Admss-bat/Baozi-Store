@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baozi Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -20,10 +21,10 @@
         <section class="card">
             <div class="card-header">
                 <h2>Clientes</h2>
-                <p>Gerencie o cadastro dos consumidores.</p>
+                <p>Gerencie o cadastro de clientes.</p>
             </div>
             <div class="acoes">
-                <button class="btn btn-primario">Cadastrar</button>
+                <a th:href="@{layers/cadastrar-cliente}"><button class="btn btn-primario">Cadastrar</button></a>
                 <button class="btn btn-secundario">Consultar</button>
             </div>
         </section>
@@ -32,7 +33,7 @@
         <section class="card">
             <div class="card-header">
                 <h2>Produtos</h2>
-                <p>Gerencie o cardápio e os itens da loja.</p>
+                <p>Gerencie os itens da loja.</p>
             </div>
             <div class="acoes">
                 <button class="btn btn-primario">Cadastrar</button>
@@ -44,7 +45,7 @@
         <section class="card">
             <div class="card-header">
                 <h2>Pedidos</h2>
-                <p>Registre e gerencie as vendas.</p>
+                <p>Gerencie os pedidos.</p>
             </div>
             <div class="acoes">
                 <button class="btn btn-primario">Cadastrar</button>
