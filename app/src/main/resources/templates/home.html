@@ -25,7 +25,7 @@
             </div>
             <div class="acoes">
                 <a th:href="@{layers/cadastrar-cliente}"><button class="btn btn-primario">Cadastrar</button></a>
-                <button class="btn btn-secundario">Consultar</button>
+                <a th:href="@{layers/listar-clientes}"><button class="btn btn-secundario">Consultar</button></a>
             </div>
         </section>
 
@@ -36,8 +36,8 @@
                 <p>Gerencie os itens da loja.</p>
             </div>
             <div class="acoes">
-                <button class="btn btn-primario">Cadastrar</button>
-                <button class="btn btn-secundario">Consultar</button>
+                <a th:href="@{layers/cadastrar-produto}"><button class="btn btn-primario">Cadastrar</button></a>
+                <a th:href="@{layers/listar-produto}"><button class="btn btn-secundario">Consultar</button></a>
             </div>
         </section>
 
@@ -48,8 +48,8 @@
                 <p>Gerencie os pedidos.</p>
             </div>
             <div class="acoes">
-                <button class="btn btn-primario">Cadastrar</button>
-                <button class="btn btn-secundario">Consultar</button>
+                <a th:href="@{layers/cadastrar-pedido}"><button class="btn btn-primario">Cadastrar</button></a>
+                <a th:href="@{layers/listar-pedido}"><button class="btn btn-secundario">Consultar</button></a>
             </div>
         </section>
 
@@ -60,7 +60,7 @@
                 <p>Visualize todos os clientes, produtos e pedidos.</p>
             </div>
             <div class="acoes">
-                <button class="btn btn-primario btn-largo">Listar</button>
+                <a th:href="@{layers/listar-tudo}"><button class="btn btn-primario btn-largo">Listar</button></a>
             </div>
         </section>
     </main>
